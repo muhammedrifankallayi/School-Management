@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/auth/login/login.component';
 import { MangementLoginComponent } from './views/auth/mangement-login/mangement-login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MeterialModule } from './meterials/meterial.module';
+import {FormsModule ,ReactiveFormsModule } from "@angular/forms"
+
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +20,11 @@ import { MangementLoginComponent } from './views/auth/mangement-login/mangement-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MeterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

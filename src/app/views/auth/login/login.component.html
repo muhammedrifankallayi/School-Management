@@ -1,1 +1,45 @@
-<p>login works!</p>
+
+
+
+
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+    <mat-tab label="Student">
+
+        <form class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-md w-full space-y-8">
+               <div>
+                 <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                  Student Sign in
+                 </h2>
+               </div>
+               <div class="mt-8 space-y-6">
+                 <div class="rounded-md shadow-sm -space-y-px">
+                   <div>
+                     <mat-form-field  class="mt-1 relative rounded-md shadow-sm w-full">
+                       <mat-label>Email address</mat-label>
+                       <input matInput type="email" class="block w-full  rounded-md placeholder-gray-400 transition duration-150 ease-in-out border border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 focus:placeholder-gray-400 sm:text-sm sm:leading-5">
+                     </mat-form-field>
+                   </div>
+                   <div>
+                     <mat-form-field  class="mt-1 relative rounded-md shadow-sm w-full">
+                       <mat-label>Password</mat-label>
+                       <input type="password" matInput   class="w-full"  >
+                     </mat-form-field>
+                   </div>
+                 </div>
+           
+                 <div>
+                   <button mat-raised-button color="primary" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                     Sign in
+                   </button>
+                 </div>
+               </div>
+            </div>
+           </form>
+
+    </mat-tab>
+    <mat-tab label="Second">Teachers</mat-tab>
+    <mat-tab label="Third">Employees</mat-tab>
+  </mat-tab-group>
+
