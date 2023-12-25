@@ -3,8 +3,12 @@
 }
 h1{
     text-decoration: underline;
+    font-size: larger;
 }
 
+*{
+    overflow-x: hidden;
+}
 .image-sec{
     background-size: cover;
   
@@ -88,3 +92,4 @@ h1{
     width: 100%;
 
 }
+

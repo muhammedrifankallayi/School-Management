@@ -7,7 +7,8 @@ const routes: Routes = [
 
 {path:"",component:LoginComponent},
 {path:"management",component:MangementLoginComponent},
-{path:"student",loadChildren:()=>import("./views/students-portal/students-portal.module").then(m=>m.StudentsPortalModule)}
+{path:"student",loadChildren:()=>import("./views/students-portal/students-portal.module").then(m=>m.StudentsPortalModule)},
+{path:"teacher",loadChildren:()=>import("./views/teachers-portal/teachers-portal.module").then(m=>m.TeachersPortalModule)}
 
 ];
 
