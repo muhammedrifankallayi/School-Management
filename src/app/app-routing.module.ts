@@ -6,7 +6,8 @@ import { MangementLoginComponent } from './views/auth/mangement-login/mangement-
 const routes: Routes = [
 
 {path:"",component:LoginComponent},
-{path:"management",component:MangementLoginComponent}
+{path:"management",component:MangementLoginComponent},
+{path:"student",loadChildren:()=>import("./views/students-portal/students-portal.module").then(m=>m.StudentsPortalModule)}
 
 ];
 

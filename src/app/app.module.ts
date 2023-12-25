@@ -7,7 +7,8 @@ import { LoginComponent } from './views/auth/login/login.component';
 import { MangementLoginComponent } from './views/auth/mangement-login/mangement-login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MeterialModule } from './meterials/meterial.module';
-import {FormsModule ,ReactiveFormsModule } from "@angular/forms"
+import {FormsModule ,ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,7 +17,7 @@ import {FormsModule ,ReactiveFormsModule } from "@angular/forms"
   declarations: [
     AppComponent,
     LoginComponent,
-    MangementLoginComponent
+    MangementLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,8 @@ import {FormsModule ,ReactiveFormsModule } from "@angular/forms"
     BrowserAnimationsModule,
     MeterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

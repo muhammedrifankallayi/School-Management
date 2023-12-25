@@ -12,6 +12,9 @@ import { MatIconModule  } from '@angular/material/icon'
 import { MatFormFieldModule  } from '@angular/material/form-field'
 import {MatTabsModule} from "@angular/material/tabs"
 import {MatInputModule} from "@angular/material/input"
+import {MatStepperModule} from "@angular/material/stepper"
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatRadioModule } from '@angular/material/radio';
 
 const MatItems = [
   MatAutocompleteModule,
@@ -25,7 +28,10 @@ const MatItems = [
   MatSnackBarModule,
   MatCheckboxModule,
   MatTabsModule,
-  MatInputModule
+  MatInputModule,
+  MatStepperModule,
+  MatNativeDateModule,
+  MatRadioModule
 ]
 
 

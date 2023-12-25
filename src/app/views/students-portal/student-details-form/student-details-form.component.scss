@@ -1,0 +1,90 @@
+.end-portal{
+    display: flex;
+}
+h1{
+    text-decoration: underline;
+}
+
+.image-sec{
+    background-size: cover;
+  
+    img{
+        width: 900px;
+      margin-left: 100px;
+      opacity: 0.5;
+      border-radius: 5px;
+      transition: 0.5s;
+    }
+}
+
+
+.student-msg{
+    width: 450px;
+    height: 100%;
+    margin-bottom: 30px;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.697);
+    position: absolute;
+    top: 200px;
+    left: 830px;
+}
+
+.btn-complete{
+    position: absolute;
+    width: 100%;
+    left: 25px;
+    top: 290px;
+ 
+}
+
+@media(min-width:1200px) and (max-width:1490px){
+    .image-sec{
+        img{
+            width: 850px;
+          margin-left: 70px;
+          opacity: 0.5;
+          border-radius: 5px;
+        }
+    }
+
+    .student-msg{
+        left: 750px;
+    }
+}
+
+@media(min-width:950px) and (max-width:1330px){
+    .image-sec{
+        img{
+            width: 700px;
+          margin-left: 30px;
+          margin-top: 40px;
+          opacity: 0.5;
+          border-radius: 5px;
+        }
+    }
+    .student-msg{
+        left: 650px;
+        
+    }
+}
+
+@media(max-width:1200px){
+    .image-sec{
+        display: none;
+       img{
+        transition: none;
+       }
+    }
+    .end-portal{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.form-field{
+    width: 100%;
+
+}
