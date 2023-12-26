@@ -5,15 +5,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <div>
                     <label for="input1" class="block mb-1 text-gray-600">First Name</label>
-                    <input type="text" name="input1" id="input1" placeholder="first name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="text" name="input1" id="input1" formControlName="firstname" placeholder="first name" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Last Name</label>
-                    <input type="text" name="input2" id="input2" placeholder="last name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="text" name="input2" id="input2" formControlName="lastname" placeholder="last name" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input3" class="block mb-1 text-gray-600">sex</label>
-                    <mat-radio-group aria-label="Select an option"  class="sex-section mx-auto" >
+                    <mat-radio-group aria-label="Select an option" formControlName="sex" class="sex-section mx-auto" >
                         <mat-radio-button value="1"><div>male</div></mat-radio-button>
                         <mat-radio-button value="2"><div>female</div></mat-radio-button>
                       </mat-radio-group>
@@ -22,60 +22,60 @@
        
                 <div>
                     <label for="date" class="block mb-1 text-gray-600">Date of birth</label>
-                    <input type="date" name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="date" name="date" id="date" formControlName="dateofbirth" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Country</label>
-                    <input type="text" name="input2" id="input2" placeholder="country" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="text" name="input2" id="input2" formControlName="country" placeholder="country" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input3" class="block mb-1 text-gray-600">State</label>
-                    <input type="text" name="input3" id="input3" placeholder="satat" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="text" name="input3" id="input3"  formControlName="state" placeholder="satat" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input1" class="block mb-1 text-gray-600">District</label>
-                    <input type="text" name="input1" id="input1" placeholder="district" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input type="text" name="input1" id="input1" formControlName="district" placeholder="district" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Place</label>
-                    <input type="text" name="input2" id="input2" placeholder="place" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input  formControlName="place"  type="text" name="input2" id="input2" placeholder="place" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input3" class="block mb-1 text-gray-600">Home Address</label>
-                    <input type="text" name="input3" id="input3" placeholder="address" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input   formControlName="address" type="text" name="input3" id="input3" placeholder="address" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input1" class="block mb-1 text-gray-600">Highest Qalification</label>
-                    <input type="text" name="input1" id="input1" placeholder="highest qualifications" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input   formControlName="h_qualification" type="text" name="input1" id="input1" placeholder="highest qualifications" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Degree</label>
-                    <input type="text" name="input2" id="input2" placeholder="degree" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input  formControlName="degree"  type="text" name="input2" id="input2" placeholder="degree" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Graduted year</label>
-                    <input type="date" name="input2" id="input2" placeholder="Gratuated year" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input formControlName="graduatedyear"  type="date" name="input2" id="input2" placeholder="Gratuated year" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input1" class="block mb-1 text-gray-600">College/University Name</label>
-                    <input type="text" name="input1" id="input1" placeholder="college name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input  formControlName="universityname" type="text" name="input1" id="input1" placeholder="college name" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
-                    <label for="date" class="block mb-1 text-gray-600">  first job joined</label>
-                    <input type="date" name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <label for="date" class="block mb-1 text-gray-600">Total Experience</label>
+                    <input  formControlName="experience"  type="date" name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input3" class="block mb-1 text-gray-600">Position</label>
-                    <input type="text" name="input3" id="input3" placeholder="position eg:math teacher" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input  formControlName="position"  type="text" name="input3" id="input3" placeholder="position eg:math teacher" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                
                 <div>
                     <label for="input3" class="block mb-1 text-gray-600">Contact Number</label>
-                    <input type="text" name="input3" id="input3" placeholder="contact number" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input formControlName="mobile"  type="text" name="input3" id="input3" placeholder="contact number" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="input2" class="block mb-1 text-gray-600">Maritual Status</label>
-                    <mat-radio-group aria-label="Select an option"  class="sex-section mx-auto" >
+                    <mat-radio-group   formControlName="m_status"  aria-label="Select an option"  class="sex-section mx-auto" >
                         <mat-radio-button value="1"><div>Married</div></mat-radio-button>
                         <mat-radio-button value="2"><div>Single</div></mat-radio-button>
                         <mat-radio-button value="2"><div>Divorced</div></mat-radio-button>
@@ -84,11 +84,11 @@
               
                 <div>
                     <label for="date" class="block mb-1 text-gray-600">partner Name (if)</label>
-                    <input type="text"  placeholder="partner name"  name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input   formControlName="p_name"  type="text"  placeholder="partner name"  name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
                 <div>
                     <label for="date" class="block mb-1 text-gray-600">partner occupation (if)</label>
-                    <input type="text"  placeholder="partner occupation"  name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    <input  formControlName="p_occupation"  type="text"  placeholder="partner occupation"  name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
                 </div>
             </div>
             
