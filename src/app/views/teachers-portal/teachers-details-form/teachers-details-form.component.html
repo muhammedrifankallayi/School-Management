@@ -1,7 +1,7 @@
 <body class="bg-gray-200 min-h-screen flex items-center justify-center">
     <div class="bg-white p-6 rounded-lg w-full max-w-7xl shadow-lg">
         <h1  class="text-center mb-2 underline uppercase" >Teacher information form</h1>
-        <form action="" method="post">
+        <form  [formGroup]="teacherForm" >
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <div>
                     <label for="input1" class="block mb-1 text-gray-600">First Name</label>

@@ -1,0 +1,11 @@
+
+<div class="nav-bar" >
+    <div><button (click)="sendOutput()" >Toggle</button></div>
+    <div>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+        </div>
+</div>

@@ -15,6 +15,7 @@ import {MatInputModule} from "@angular/material/input"
 import {MatStepperModule} from "@angular/material/stepper"
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
+import {MatMenuModule} from "@angular/material/menu";
 
 const MatItems = [
   MatAutocompleteModule,
@@ -31,7 +32,8 @@ const MatItems = [
   MatInputModule,
   MatStepperModule,
   MatNativeDateModule,
-  MatRadioModule
+  MatRadioModule,
+  MatMenuModule
 ]
 
 

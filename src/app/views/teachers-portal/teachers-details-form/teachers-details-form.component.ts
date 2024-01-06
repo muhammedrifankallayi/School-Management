@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DbService } from 'src/app/shared/services/db.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-teachers-details-form',
@@ -12,7 +14,7 @@ export class TeachersDetailsFormComponent {
 
   teacherForm! :FormGroup
 
-  constructor(private fb: FormBuilder,private service:DbService) {}
+  constructor(private fb: FormBuilder,private service:DbService,private snackBar:MatSnackBar) {}
 
   ngOnInit() {
     this.teacherForm = new FormGroup({
@@ -40,12 +42,21 @@ export class TeachersDetailsFormComponent {
   }
 
   submitForm() {
-    if (this.teacherForm) {
-      // Add your form submission logic here
+    if (this.teacherForm.valid) {
+    this.service.DbPost("teacher/teacher_details",this.teacherForm.value).subscribe((res)=>{
+    this.snackBar.open("details saved successfull","ok",{duration:2000})
+    })
       console.log('Form submitted:', this.teacherForm.value);
 
       // Reset form if needed
       this.resetForm();
+    }else{
+Swal.fire({
+  timer:1000,
+  icon:"error",
+  title:"Invalid Form",
+  text:"please validate the inputs !!"
+})
     }
   }
 

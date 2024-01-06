@@ -1,4 +1,13 @@
-.wrapp-app{
-    margin-left: 10px;
-    margin-right: 10px;
-}
+/* app-sidebar.component.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Adjust as needed */
+  }
+
+  
+  router-outlet {
+    flex: 1; 
+  }
+  

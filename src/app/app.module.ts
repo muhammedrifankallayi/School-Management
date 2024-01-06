@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MeterialModule } from './meterials/meterial.module';
 import {FormsModule ,ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './default-layouts/student-layouts/header/header.component';
+import { SideBarComponent } from './default-layouts/student-layouts/side-bar/side-bar.component';
+import { DefaultLayoutsModule } from './default-layouts/default-layouts.module';
 
 
 
@@ -19,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     LoginComponent,
     MangementLoginComponent,
+   
   
   ],
   imports: [
@@ -28,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     MeterialModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DefaultLayoutsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

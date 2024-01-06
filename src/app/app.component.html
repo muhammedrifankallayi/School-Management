@@ -1,5 +1,18 @@
+<!-- app-sidebar.component.html -->
 
-<div class="wrapp" >
-    <router-outlet></router-outlet>
+<!-- <div class="app-container">
+   
+   
+  </div> -->
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="over">
+<h1>heloo</h1>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
 
-</div>
+      <app-header (childOutput)="drawer.toggle()" ></app-header>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
