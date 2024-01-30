@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+<div>
+    <h1 class="text-center title" >Student Portal</h1>
+</div>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+
+      <app-header (childOutput)="drawer.toggle()" ></app-header>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

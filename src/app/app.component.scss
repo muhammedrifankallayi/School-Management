@@ -11,3 +11,45 @@
     flex: 1; 
   }
   
+
+  mat-drawer{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+  }
+/* your-component.component.css */
+
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* You can adjust the background color as needed */
+    z-index: 1000; /* Adjust the z-index to make sure it's above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a visual separation */
+  }
+  
+  .example-container {
+    margin-top: 60px; /* Add margin to the container to prevent content from being hidden under the header */
+  }
+  
+  /* Add other styles for your content as needed */
+  
+
+
+  .text-center{
+    text-align: center;
+  }
+
+  .item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+    padding-bottom: 5px;
+  }
