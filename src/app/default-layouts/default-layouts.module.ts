@@ -6,6 +6,10 @@ import { HeaderComponent } from './student-layouts/header/header.component';
 import { MeterialModule } from '../meterials/meterial.module';
 import { StudentLayoutsComponent } from './student-layouts/student-layouts.component';
 import { RouterModule } from '@angular/router';
+import { TeacherLayoutsComponent } from './teacher-layouts/teacher-layouts.component';
+import { TeacherHeaderComponent } from './teacher-layouts/teacher-header/teacher-header.component';
+import { ManagementLayoutComponent } from './management-layout/management-layout.component';
+import { ManagementHeaderComponent } from './management-layout/management-header/management-header.component';
 
 
 
@@ -14,7 +18,11 @@ import { RouterModule } from '@angular/router';
   declarations: [  
     HeaderComponent,
     SideBarComponent,
-    StudentLayoutsComponent ,
+    StudentLayoutsComponent,
+    TeacherLayoutsComponent,
+    TeacherHeaderComponent,
+    ManagementLayoutComponent,
+    ManagementHeaderComponent,
 
 
    ],
@@ -27,6 +35,8 @@ import { RouterModule } from '@angular/router';
   exports:[
     HeaderComponent,
     SideBarComponent ,
+    TeacherHeaderComponent,
+    ManagementHeaderComponent
    
   ]
 })

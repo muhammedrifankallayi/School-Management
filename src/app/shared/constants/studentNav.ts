@@ -8,8 +8,8 @@ export interface stNav{
 
 export const stNavItems:stNav[] = [
 
-   { name:"datails",path:"/"},
+   { name:"datails",path:"/"  },
    {name:"dashboard",path:"/dashboard"},
-   
+
 
 ]
