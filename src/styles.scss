@@ -6,7 +6,7 @@
 // parent div
 
 .Card-wrapper{
-    border-bottom: 1px solid #cccc;
+    border: 1px solid #cccc;
     border-radius: 5px;
     background: #ffff;
 }
@@ -53,3 +53,22 @@ th {
 }
 
 
+
+// inputs
+
+
+.inputGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+
+.mainBox{
+    width: 250px;
+    float: left;
+}
+.mainInput{
+    width: 100%;
+    float: left;
+}
