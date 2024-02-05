@@ -53,22 +53,37 @@ th {
 }
 
 
-
 // inputs
-
 
 .inputGrid{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 5px;
+    padding: 5px;
 }
 
-.mainBox{
-    width: 250px;
+.mainBox {
+    width: 100%;
     float: left;
+    label{
+        display: block;
+        margin-bottom: 0.2rem;
+        font-size: 0.875rem; /* Adjust the font size as needed */
+        font-weight: 500;
+        color: #1a202c; /* Adjust the color as needed */
+    }
 }
 .mainInput{
     width: 100%;
-    float: left;
+    padding: 0.625rem; /* Adjust the padding as needed */
+    font-size: 0.875rem; /* Adjust the font size as needed */
+    border: 1px solid #cccc; /* Adjust the border color as needed */
+    border-radius: 0.375rem; /* Adjust the border radius as needed */
+    background-color: #f7fafc; /* Adjust the background color as needed */
+    color: #2d3748; /* Adjust the text color as needed */
+    
+    /* Add any other styling for focus state */
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

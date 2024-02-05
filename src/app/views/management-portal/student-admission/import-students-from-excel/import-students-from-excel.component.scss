@@ -1,0 +1,52 @@
+/* Add custom styles to mat-form-field */
+.custom-mat-form-field {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Add custom styles to mat-input */
+  .custom-input {
+    border: 1px solid #ced4da; /* Normal input border color */
+    border-radius: 0.25rem; /* Normal input border radius */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Adjust the focus styles for mat-input */
+  .custom-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Add custom styles to mat-datepicker-toggle */
+  .mat-datepicker-toggle {
+    cursor: pointer;
+  }
+  
+
+
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mainInput {
+    flex: 1;
+    /* Add other input styles as needed */
+  }
+  
+  .mat-datepicker-toggle {
+    position: absolute;
+    right: 8px; /* Adjust the distance from the right as needed */
+    cursor: pointer;
+    z-index: 5;
+  }
+  

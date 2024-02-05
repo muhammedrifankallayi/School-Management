@@ -3,6 +3,35 @@
     Import student from excel
 </div>
 
+<div class="inputGrid">
+    <div class="mainBox" >
+        <label for="first_name" class="">First name</label>
+        <input type="text" id="first_name" class="mainInput" placeholder="John" required>
+    </div>
+
+    <div class="mainBox" >
+        <label for="first_name" class="">First name</label>
+        <input type="text" id="first_name" class="mainInput" placeholder="John" required>
+    </div>
+
+    <div class="mainBox" >
+        <label for="first_name" class="">First name</label>
+        <input type="text" id="first_name" class="mainInput" placeholder="John" required>
+    </div>
+
+    <div class="mainBox">
+        <label for="first_name" class="">First name</label>
+        <div class="input-container">
+          <input matInput [matDatepicker]="picker" class="mainInput">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        </div>
+        <mat-datepicker #picker></mat-datepicker>
+      </div>
+      
+
+    
+</div>
+
 <div class="main-content">
     <table  class="mainTable" >
         <thead>
